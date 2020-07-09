@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th
+        scope="col"
+        *ngFor="let col of headers">{{ col }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td>{{ row.date }}</td>
+      <td>{{ row.merchant }}</td>
+      <td>{{ row.amount }}</td>
+    </tr>
+  </tbody>
+</table>
